@@ -27,3 +27,8 @@ OrganizedApp/
 **Prueba:** smoke test OK (crear plan, agregar bloques, guardar y recargar).
 
 **Cómo ejecutar:** `python main.py`
+
+## 2026-10-01 — Primer commit
+
+- Repo Git inicializado (rama `master`), commit raíz `b9ea455`: "Estructuración y planeación".
+- Agregado `.gitignore` (excluye `__pycache__/` y `data/plan.json`).
