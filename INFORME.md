@@ -43,3 +43,34 @@ OrganizedApp/
 ## 2026-10-01 — App en uso
 
 - Comando de ejecución verificado: `python main.py` (desde la carpeta del proyecto).
+
+## 2026-10-01 21:55 — Documentación para agentes y comandos OpenCode
+
+**Stack:** sin cambios (Python 3.14, sin dependencias externas).
+
+**Estructura actualizada:**
+```
+OrganizedApp/
+├── main.py                    # Punto de entrada
+├── INFORME.md                 # Registro de avances
+├── AGENTS.md                  # [NUEVO] Normas y contexto para agentes de IA
+├── .gitignore
+├── data/plan.json             # Persistencia (no trackeada)
+├── src/
+│   ├── __init__.py
+│   ├── models.py              # PlanDiario, Bloque, ChecklistItem (dataclasses)
+│   ├── planner.py             # Lógica de negocio reutilizable
+│   ├── storage.py             # Persistencia en JSON
+│   └── cli.py                 # Menú interactivo
+├── .opencode/
+│   └── commands/
+│       └── add-informe.md     # [NUEVO] Comando para generar informes en INFORME.md
+└── .agents/
+    └── skills/                # [NUEVO] Carpeta para skills de agentes (vacía)
+```
+
+**Funciones añadidas:** ninguna — sin cambios en el código fuente.
+
+**Notas:**
+- `AGENTS.md` define convenciones del proyecto, prohibiciones (sin `pip install`, sin cambios estructurales sin Plan) y flujo de trabajo con INFORME.md.
+- El comando `/add-informe` estandariza la preparación y redacción de estos informes.
