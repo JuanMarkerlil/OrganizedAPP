@@ -44,7 +44,7 @@ OrganizedApp/
 
 - Comando de ejecución verificado: `python main.py` (desde la carpeta del proyecto).
 
-## 2026-10-01 21:55 — Documentación para agentes y comandos OpenCode
+## 2026-10-01 21:55 (actualizado 22:08) — Documentación para agentes, comandos OpenCode y skills
 
 **Stack:** sin cambios (Python 3.14, sin dependencias externas).
 
@@ -53,7 +53,7 @@ OrganizedApp/
 OrganizedApp/
 ├── main.py                    # Punto de entrada
 ├── INFORME.md                 # Registro de avances
-├── AGENTS.md                  # [NUEVO] Normas y contexto para agentes de IA
+├── AGENTS.md                  # Normas y contexto para agentes de IA
 ├── .gitignore
 ├── data/plan.json             # Persistencia (no trackeada)
 ├── src/
@@ -64,13 +64,18 @@ OrganizedApp/
 │   └── cli.py                 # Menú interactivo
 ├── .opencode/
 │   └── commands/
-│       └── add-informe.md     # [NUEVO] Comando para generar informes en INFORME.md
+│       ├── add-informe.md     # Comando para crear informes en INFORME.md
+│       └── update-informe.md  # [NUEVO] Comando para actualizar el informe vigente
 └── .agents/
-    └── skills/                # [NUEVO] Carpeta para skills de agentes (vacía)
+    └── skills/
+        └── smoke-test/
+            └── SKILL.md       # [NUEVO] Skill de smoke test del MVP
 ```
 
 **Funciones añadidas:** ninguna — sin cambios en el código fuente.
 
 **Notas:**
 - `AGENTS.md` define convenciones del proyecto, prohibiciones (sin `pip install`, sin cambios estructurales sin Plan) y flujo de trabajo con INFORME.md.
-- El comando `/add-informe` estandariza la preparación y redacción de estos informes.
+- `/add-informe` crea un informe nuevo; `/update-informe` actualiza el informe vigente.
+- La skill `smoke-test` ejecuta una prueba de humo (planner + storage con ruta temporal), sin tocar `data/plan.json` ni hacer commit/push.
+- `add-informe.md` corregido: redacción de las reglas 2 y 3.
