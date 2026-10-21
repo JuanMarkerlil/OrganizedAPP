@@ -79,3 +79,18 @@ OrganizedApp/
 - `/add-informe` crea un informe nuevo; `/update-informe` actualiza el informe vigente.
 - La skill `smoke-test` ejecuta una prueba de humo (planner + storage con ruta temporal), sin tocar `data/plan.json` ni hacer commit/push.
 - `add-informe.md` corregido: redacción de las reglas 2 y 3.
+
+## 2026-10-01 — Constitución del proyecto (base v0.1)
+
+**Archivo nuevo:** `docs/constitution.md`
+
+**Contenido:**
+- **Preámbulo:** propósito del proyecto (simplicidad, claridad, constancia).
+- **Artículo I — Principios fundamentales:** 5 principios rectores.
+- **Artículo II — Reglas técnicas innegociables:** sin dependencias, dataclasses, migración de esquema JSON, datos del usuario no trackeados, modo Plan para cambios grandes.
+- **Artículo III — Calidad y verificación:** smoke test, ejecución real, errores en español, legibilidad.
+- **Artículo IV — Flujo de trabajo:** consultar → planear → construir → verificar → registrar.
+- **Artículo V — Evolución:** proceso de enmienda (propuesta, redacción, aprobación, revisión mensual), reglas de calidad para artículos e historial de enmiendas.
+- **Checklist de revisión periódica** para mantenerla viva.
+
+**Nota:** la Constitución es una *base* deliberadamente breve; está pensada para crecer mediante enmiendas a medida que el proyecto madure.
